@@ -10,3 +10,10 @@ for i in range(len(x)):
     if x[i] == ',':
         print(x[i + 1])
         break
+
+
+    
+#str_1 = '6,78'
+#print(str_1.split(','))
+
+
