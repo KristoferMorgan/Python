@@ -6,11 +6,18 @@
 
 
 
-def create_list(number: int):
+def create_list(number: int) -> list:
     new_list = []
-    for element in range(1, number+1):
-        new_list.append((1+1/element)**element)
+    for n in range(1, number+1):
+        new_list.append((1+1/n)**n)
     return new_list
-
+def sum_elements(list:list) -> float:
+    summ =0
+    for i in list:
+        summ += i
+    return summ
 number = int(input("enter number:"))
-print(create_list(number))
+my_list = create_list(number)
+summ = sum_elements(my_list)
+print(f"это ваш список:{my_list}")
+print(f"сумма элементов масива равна: {summ}")
