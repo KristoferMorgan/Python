@@ -16,6 +16,6 @@ def sum_of_odd_elements(my_list:list) -> int:
 
 
 
-your_list = [int(i) for i in input("enter int element list:").split()]
+your_list = [int(i) for i in input("enter the list items separated by a space:").split()]
 print(f"it't your list: {your_list}")
 print(f"sum of odd elements = {sum_of_odd_elements(your_list)}")
