@@ -4,10 +4,18 @@
 # 
 # Пример:
 # 
-# - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
+# - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 
+def sum_of_odd_elements(my_list:list) -> int:
+    summ = 0
+    for i in my_list:
+        if i % 2 == 0:
+            continue
+        else:
+            summ += i
+    return summ
 
 
 
-
-my_list = [int(i) for i in input("enter int element list:").split()]
-print(f"it't your list: {my_list}")
+your_list = [int(i) for i in input("enter int element list:").split()]
+print(f"it't your list: {your_list}")
+print(f"sum of odd elements = {sum_of_odd_elements(your_list)}")
