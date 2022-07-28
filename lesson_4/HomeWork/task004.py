@@ -23,7 +23,7 @@ def  convert_to_string(my_list:list):
 my_list = []
 k = int(input("enter the natural degree k:"))
 operation(k,my_list)
-path = os.path.join("Task_file","task004.txt")
+path = os.path.join("Task_file","Task004.txt")
 new_list = convert_to_string(my_list)
 with open(path, 'w') as file:
     file.writelines(new_list)
